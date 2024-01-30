@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "TCM.Azure.Function": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 5002",
+      "launchBrowser": false
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<form>
+  <div>
+    <p>Count - {{ count }}</p>
+
+    <button type="submit" (click)="getData($event)">
+      Get Data And Increase Count
+    </button>
+  </div>
+</form>
+<!-- <div *ngFor="let item of data">
+  <div>
+    <p>{{ item.date }}</p>
+    <p>{{ item.temperatureC }}</p>
+    <p>{{ item.summary }}</p>
+  </div>
+</div> -->
+<p>SignalR Data</p>
+{{signalrData | json}}
+<div *ngFor="let item of signalrData">
+  <div>
+    <p>{{ item.date }}</p>
+    <p>{{ item.temperatureC }}</p>
+    <p>{{ item.summary }}</p>
+  </div>
+</div>
+<router-outlet></router-outlet>

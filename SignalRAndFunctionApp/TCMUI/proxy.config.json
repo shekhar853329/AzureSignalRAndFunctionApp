@@ -1,0 +1,13 @@
+{
+  "/api1": {
+    "target": "https://localhost:5000",
+    "secure": false,
+    "logLevel": "debug"
+  },
+  "/api": {
+    "target": "https://tcmazurefunction.azurewebsites.net",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}
