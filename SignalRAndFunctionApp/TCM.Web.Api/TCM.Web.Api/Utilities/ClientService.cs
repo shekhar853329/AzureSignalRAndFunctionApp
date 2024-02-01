@@ -43,7 +43,7 @@ namespace TCM.Web.Api.Utilities
 
                     StringContent content = new StringContent(requestBody, System.Text.Encoding.UTF8, "application/json");
 
-                    response = await httpClient.PostAsync($"api/{functionName}?code=fPret4BHswERgDIIn_a8sPyS3JuSS7QJKxLBKGCyxdduAzFunCFFQQ==", content);
+                    response = await httpClient.PostAsync($"events/{functionName}?code=fPret4BHswERgDIIn_a8sPyS3JuSS7QJKxLBKGCyxdduAzFunCFFQQ==", content);
 
                     response.EnsureSuccessStatusCode();
                     return response;

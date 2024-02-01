@@ -4,7 +4,7 @@
     "secure": false,
     "logLevel": "debug"
   },
-  "/api": {
+  "/events": {
     "target": "https://tcmazurefunction.azurewebsites.net",
     "secure": false,
     "changeOrigin": true,

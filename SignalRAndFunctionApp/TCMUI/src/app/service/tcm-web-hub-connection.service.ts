@@ -35,7 +35,7 @@ export class TcmWebHubConnectionService {
     SingletonCheckHelper.ensureSingleton(this);
 
     this.hubConnection = new HubConnectionBuilder()
-      .withUrl("/api")
+      .withUrl("/events")
       .withAutomaticReconnect(new InfiniteRetryPolicy())
       .build();
   }
